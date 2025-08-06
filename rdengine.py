@@ -40,7 +40,7 @@ class radioEngine(Engine):
         wf.writeframes(res)
         wf.close()
 
-        with open('wav.wav', 'rb') as f:
+        with open('wav3.wav', 'rb') as f:
             aun = f.read()
 
         binary = self.bytes_to_bits_binary(aun[44:])
@@ -58,3 +58,4 @@ class radioEngine(Engine):
 
         # randbytes = merge_entropy(randbytes, RPOOL, output_length=len(randbytes))
         return randbytes
+
